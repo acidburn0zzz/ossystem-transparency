@@ -156,13 +156,13 @@ jobs:
           task config
 
       - name: Download network mode disk installations
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: stboot_network_disk
           path: out
 
       - name: Download example OS Package
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ospkg
           path: out/ospkgs
@@ -196,13 +196,13 @@ jobs:
           task config
 
       - name: Download network mode iso installations
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: stboot_network_iso
           path: out
 
       - name: Download example OS Package
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ospkg
           path: out/ospkgs
@@ -236,19 +236,19 @@ jobs:
           task config
 
       - name: Download provisioning iso image
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: provisioning_iso
           path: out
 
       - name: Download network mode efivar disk installations
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: stboot_network_efivar_disk
           path: out
 
       - name: Download example OS Package
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ospkg
           path: out/ospkgs
@@ -286,19 +286,19 @@ jobs:
           task config
 
       - name: Download provisioning iso image
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: provisioning_iso
           path: out
 
       - name: Download network mode efivar iso installations
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: stboot_network_efivar_iso
           path: out
 
       - name: Download example OS Package
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ospkg
           path: out/ospkgs
@@ -336,7 +336,7 @@ jobs:
           task config
 
       - name: Download local mode disk installations
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: stboot_local_disk
           path: out
